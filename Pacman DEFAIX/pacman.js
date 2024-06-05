@@ -87,7 +87,7 @@ function stopTimer() {
     clearInterval(intervalId);
 }
 
-/* Gestion des cibles multiples après clic sur démarrer */
+/* Gestion des cibles multiples après  démarrage  */
 
 function onClickButtonStart() {
     const nbrtarget = parseInt(document.getElementById("nbtargets").value);
@@ -137,7 +137,7 @@ function multipleTargetCreator(nbrtarget) {
     }
 }
 
-/* Autres */
+/* Victoire */
 
 function win() {
     const minute = document.getElementById("minutes").textContent;
@@ -153,7 +153,7 @@ function win() {
     showMyAlert("WinningAlertBox");
 }
 
-// MyAlerts
+// Alertes
 function createAlertBox(id, header, message, displayState = "none") {
     const alertbox = document.createElement('div');
     alertbox.innerHTML = `<h2>${header}</h2><p>${message}</p><button onclick="closeMyAlert()">Fermer</button>`;
